@@ -20,5 +20,5 @@ jobs:
           git config --local user.name "buyufan"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "自动保持 GitHub 提交"
+          git commit --allow-empty -m "GitHub自动提交"
           git push
